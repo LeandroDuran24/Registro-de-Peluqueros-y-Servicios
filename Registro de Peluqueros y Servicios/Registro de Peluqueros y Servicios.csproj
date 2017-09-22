@@ -106,7 +106,10 @@
     <Content Include="Base de Datos\BarberShopDb_log.ldf">
       <DependentUpon>BarberShopDb.mdf</DependentUpon>
     </Content>
+    <Content Include="UI\Consultas\Consulta Peluqueros.aspx" />
     <Content Include="UI\Formularios\Registro Peluqueros.aspx" />
+    <Content Include="UI\Consultas\Consulta Servicios.aspx" />
+    <Content Include="UI\Formularios\Registro Servicios.aspx" />
     <Content Include="UI\Reportes\DataSet.xsc" />
     <Content Include="UI\Reportes\DataSet.xss" />
     <None Include="Web.Debug.config">
@@ -118,11 +121,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="UI\Consultas\Consulta Peluqueros.aspx" />
-    <Content Include="UI\Consultas\Consulta Servicios.aspx" />
     <Content Include="UI\CSS\StyleSheet1.css" />
     <Content Include="UI\Formularios\MenuForm.aspx" />
-    <Content Include="UI\Formularios\Registro Servicios.aspx" />
     <Content Include="UI\Reportes\Reporte Peluqueros.aspx" />
     <Content Include="UI\Reportes\Reporte Servicio.aspx" />
     <Content Include="Web.config" />
@@ -151,6 +151,13 @@
     <Compile Include="UI\Consultas\Consulta Peluqueros.aspx.designer.cs">
       <DependentUpon>Consulta Peluqueros.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UI\Formularios\Registro Peluqueros.aspx.cs">
+      <DependentUpon>Registro Peluqueros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Formularios\Registro Peluqueros.aspx.designer.cs">
+      <DependentUpon>Registro Peluqueros.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Consultas\Consulta Servicios.aspx.cs">
       <DependentUpon>Consulta Servicios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -164,13 +171,6 @@
     </Compile>
     <Compile Include="UI\Formularios\MenuForm.aspx.designer.cs">
       <DependentUpon>MenuForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Formularios\Registro Peluqueros.aspx.cs">
-      <DependentUpon>Registro Peluqueros.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UI\Formularios\Registro Peluqueros.aspx.designer.cs">
-      <DependentUpon>Registro Peluqueros.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Formularios\Registro Servicios.aspx.cs">
       <DependentUpon>Registro Servicios.aspx</DependentUpon>

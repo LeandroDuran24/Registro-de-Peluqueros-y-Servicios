@@ -4,9 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Tarea_4.Entidades;
 
-namespace Tarea_4.UI.Consultas
+namespace Registro_de_Peluqueros_y_Servicios.UI.Consultas
 {
     public partial class Consulta_Servicios : System.Web.UI.Page
     {
@@ -24,7 +23,7 @@ namespace Tarea_4.UI.Consultas
             if (DropDownList1.SelectedIndex == 0)
             {
                 int id = Convert.ToInt32(TextBox1.Text);
-                lista = BLL.ServicioBll.GetList(p => p.idServicio == id);
+                lista = ServicioBll.GetList(p => p.idServicio == id);
                 GridView1.DataSource = lista;
                 GridView1.DataBind();
             }
@@ -36,7 +35,7 @@ namespace Tarea_4.UI.Consultas
                 }
                 else
                 {
-                    lista = BLL.ServicioBll.GetList(p => p.nombre == TextBox1.Text);
+                    lista = ServicioBll.GetList(p => p.nombre == TextBox1.Text);
                     GridView1.DataSource = lista;
                     GridView1.DataBind();
                 }
@@ -46,15 +45,16 @@ namespace Tarea_4.UI.Consultas
             else if (DropDownList1.SelectedIndex == 2)
             {
 
-                lista = BLL.ServicioBll.GetListTodo();
+                lista = ServicioBll.GetListTodo();
                 GridView1.DataSource = lista;
                 GridView1.DataBind();
 
             }
-           
+
             GridView1.DataSource = lista;
             GridView1.DataBind();
         }
+
 
         protected void ButtonBuscar_Click(object sender, EventArgs e)
         {

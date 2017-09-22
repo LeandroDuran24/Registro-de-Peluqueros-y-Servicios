@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
-using Tarea_4.Entidades;
+﻿using System.Data.Entity;
 
-namespace Tarea_4.DAL
+namespace Registro_de_Peluqueros_y_Servicios
 {
     public class BarberShopDb: DbContext
     {

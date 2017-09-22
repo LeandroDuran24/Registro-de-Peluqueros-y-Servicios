@@ -4,11 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Tarea_4.Entidades;
 
-namespace Registro_de_Peluqueros_y_Servicios.UI.Formularios
+namespace Registro_de_Peluqueros_y_Servicios.UI.Consultas
 {
-    public partial class Registro_Peluqueros : System.Web.UI.Page
+    public partial class Consulta_Peluqueros : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,7 +21,6 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Formularios
             myScriptResDef.CdnDebugPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.js";
             ScriptManager.ScriptResourceMapping.AddDefinition("jquery", null, myScriptResDef);
         }
-
 
         Peluqueros peluquero = new Peluqueros();
 
@@ -47,11 +45,10 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Formularios
         }
 
 
-
         protected void Buscar_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(idTextbox.Text);
-            peluquero = Tarea_4.BLL.PeluqueroBll.Buscar(p => p.idPeluquero == id);
+            peluquero = PeluqueroBll.Buscar(p => p.idPeluquero == id);
 
             if (peluquero != null)
             {
@@ -64,7 +61,6 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Formularios
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('No existe');</script>");
             }
-
         }
 
         protected void Nuevo_Click(object sender, EventArgs e)
@@ -77,12 +73,12 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Formularios
             peluquero = llenarCampos();
             if (peluquero.idPeluquero > 0)
             {
-                Tarea_4.BLL.PeluqueroBll.Modificar(peluquero);
+                PeluqueroBll.Modificar(peluquero);
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('Modificado !');</script>");
             }
             else
             {
-                Tarea_4.BLL.PeluqueroBll.Guardar(peluquero);
+                PeluqueroBll.Guardar(peluquero);
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('Guardado !');</script>");
                 limpiar();
                 NombreTextbox.Focus();
@@ -92,14 +88,13 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Formularios
         protected void Eliminar_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(idTextbox.Text);
-            peluquero = Tarea_4.BLL.PeluqueroBll.Buscar(p => p.idPeluquero == id);
-
+            peluquero = PeluqueroBll.Buscar(p => p.idPeluquero == id);
+        
             if (peluquero != null)
             {
-                Tarea_4.BLL.PeluqueroBll.Eliminar(peluquero);
+                PeluqueroBll.Eliminar(peluquero);
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('Eliminado !');</script>");
             }
-
         }
     }
 }

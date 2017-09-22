@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Tarea_4.Entidades
+namespace Registro_de_Peluqueros_y_Servicios
 {
     public class Peluqueros
     {

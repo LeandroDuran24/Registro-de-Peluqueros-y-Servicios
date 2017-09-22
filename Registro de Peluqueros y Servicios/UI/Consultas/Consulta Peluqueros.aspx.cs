@@ -4,19 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Tarea_4.Entidades;
 
-namespace Tarea_4.UI.Consultas
+namespace Registro_de_Peluqueros_y_Servicios.UI.Consultas
 {
-    public partial class Consulta_Peluqueros : System.Web.UI.Page
+    public partial class Consulta_Peluqueros1 : System.Web.UI.Page
     {
         public static List<Peluqueros> lista { get; set; }
-
         protected void Page_Load(object sender, EventArgs e)
         {
             Peluqueros peluquero = new Peluqueros();
-           /* GridView1.DataSource = BLL.PeluqueroBll.GetListTodo();
-            GridView1.DataBind();*/
+            /* GridView1.DataSource = BLL.PeluqueroBll.GetListTodo();
+             GridView1.DataBind();*/
             lista = new List<Peluqueros>();
         }
 
@@ -25,7 +23,7 @@ namespace Tarea_4.UI.Consultas
             if (DropDownList1.SelectedIndex == 0)
             {
                 int id = Convert.ToInt32(TextBox1.Text);
-                lista = BLL.PeluqueroBll.GetList(p => p.idPeluquero == id);
+                lista = PeluqueroBll.GetList(p => p.idPeluquero == id);
                 GridView1.DataSource = lista;
                 GridView1.DataBind();
             }
@@ -37,7 +35,7 @@ namespace Tarea_4.UI.Consultas
                 }
                 else
                 {
-                    lista = BLL.PeluqueroBll.GetList(p => p.nombre == TextBox1.Text);
+                    lista =PeluqueroBll.GetList(p => p.nombre == TextBox1.Text);
                     GridView1.DataSource = lista;
                     GridView1.DataBind();
                 }
@@ -53,7 +51,7 @@ namespace Tarea_4.UI.Consultas
                 {
                     if (desde <= hasta)
                     {
-                        lista = BLL.PeluqueroBll.GetList(p => p.fecha >= desde && p.fecha <= hasta);
+                        lista = PeluqueroBll.GetList(p => p.fecha >= desde && p.fecha <= hasta);
                         GridView1.DataSource = lista;
                         GridView1.DataBind();
                     }
@@ -73,7 +71,7 @@ namespace Tarea_4.UI.Consultas
             else if (DropDownList1.SelectedIndex == 3)
             {
 
-                lista = BLL.PeluqueroBll.GetListTodo();
+                lista = PeluqueroBll.GetListTodo();
                 GridView1.DataSource = lista;
                 GridView1.DataBind();
 

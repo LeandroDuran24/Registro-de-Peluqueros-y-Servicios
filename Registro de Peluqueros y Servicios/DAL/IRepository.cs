@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tarea_4.DAL
+namespace Registro_de_Peluqueros_y_Servicios
 {
     interface IRepository<TEntity>:IDisposable where TEntity:class
     {

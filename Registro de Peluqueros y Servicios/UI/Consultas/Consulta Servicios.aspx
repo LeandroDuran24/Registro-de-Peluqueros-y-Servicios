@@ -1,18 +1,17 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Consulta Servicios.aspx.cs" Inherits="Tarea_4.UI.Consultas.Consulta_Servicios" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Consulta Servicios.aspx.cs" Inherits="Registro_de_Peluqueros_y_Servicios.UI.Consultas.Consulta_Servicios" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-      <!--Inclusion de bootstrap-->
+     <!--Inclusion de bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../Css/StyleSheet1.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>Consulta Servicios</title>
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -95,5 +94,5 @@
 
 
     </form>
-</body>
+    </body>
 </html>

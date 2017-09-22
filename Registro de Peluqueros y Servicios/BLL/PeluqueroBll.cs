@@ -1,17 +1,17 @@
-﻿using System;
+﻿using Registro_de_Peluqueros_y_Servicios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Web;
-using Tarea_4.DAL;
-using Tarea_4.Entidades;
 
-namespace Tarea_4.BLL
+
+
+namespace Registro_de_Peluqueros_y_Servicios
 {
     public class PeluqueroBll
     {
 
-        public static Entidades.Peluqueros Guardar(Peluqueros nuevo)
+        public static Peluqueros Guardar(Peluqueros nuevo)
         {
             Peluqueros retorno = null;
             using (var conn = new Repository<Peluqueros>())

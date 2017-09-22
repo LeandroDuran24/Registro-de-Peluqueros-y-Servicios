@@ -1,11 +1,13 @@
-﻿using System;
+﻿using Registro_de_Peluqueros_y_Servicios;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Web;
 
-namespace Tarea_4.DAL
+
+namespace Registro_de_Peluqueros_y_Servicios
 {
     public class Repository<TENtity> : IRepository<TENtity> where TENtity : class
     {

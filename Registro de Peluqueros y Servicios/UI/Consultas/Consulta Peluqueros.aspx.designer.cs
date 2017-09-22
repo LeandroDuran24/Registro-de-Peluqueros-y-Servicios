@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tarea_4.UI.Consultas {
+namespace Registro_de_Peluqueros_y_Servicios.UI.Consultas {
     
     
-    public partial class Consulta_Peluqueros {
+    public partial class Consulta_Peluqueros1 {
         
         /// <summary>
         /// form1 control.

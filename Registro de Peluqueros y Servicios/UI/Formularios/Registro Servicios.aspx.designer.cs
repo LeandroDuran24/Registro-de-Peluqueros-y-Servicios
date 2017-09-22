@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tarea_4.UI.Registros {
+namespace Registro_de_Peluqueros_y_Servicios.UI.Formularios {
     
     
     public partial class Registro_Servicios {
