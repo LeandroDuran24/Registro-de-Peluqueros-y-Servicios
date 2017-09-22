@@ -14,11 +14,11 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Reportes
         {
             ReportViewer1.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Local;
             ReportViewer1.Reset();
-            ReportViewer1.LocalReport.ReportPath = Server.MapPath(@"Servicio.rdlc");
+            ReportViewer1.LocalReport.ReportPath = Server.MapPath(@"Servicios.rdlc");
             ReportViewer1.LocalReport.DataSources.Clear();
 
             ReportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WebForms.ReportDataSource("DataSetServicio",
-                Consulta_Peluqueros1.lista));
+                Consulta_Servicios.lista));
 
             ReportViewer1.LocalReport.Refresh();
         }

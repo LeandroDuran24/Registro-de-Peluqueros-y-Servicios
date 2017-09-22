@@ -469,7 +469,12 @@
       </Textbox>
     </ReportItems>
     <Height>5.85417in</Height>
-    <Style />
+    <Style>
+      <Border>
+        <Color>Blue</Color>
+        <Style>Double</Style>
+      </Border>
+    </Style>
   </Body>
   <Width>8.125in</Width>
   <Page>
@@ -534,7 +539,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox18</rd:DefaultName>
-          <Top>1.39665cm</Top>
+          <Top>1.29082cm</Top>
           <Left>6.31708cm</Left>
           <Height>1.14335cm</Height>
           <Width>7.31542cm</Width>
@@ -552,7 +557,8 @@
       </ReportItems>
       <Style>
         <Border>
-          <Style>None</Style>
+          <Color>Blue</Color>
+          <Style>Double</Style>
         </Border>
       </Style>
     </PageHeader>
@@ -577,7 +583,7 @@
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
           <Top>0.17639cm</Top>
-          <Left>7.35224cm</Left>
+          <Left>6.31708cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <Style>
@@ -593,7 +599,8 @@
       </ReportItems>
       <Style>
         <Border>
-          <Style>None</Style>
+          <Color>Blue</Color>
+          <Style>Double</Style>
         </Border>
       </Style>
     </PageFooter>

@@ -9,10 +9,10 @@
               <Width>2.87042cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.59516cm</Width>
+              <Width>4.62958cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.97625cm</Width>
+              <Width>4.48437cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -222,7 +222,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!costo.Value)</Value>
+                              <Value>=Fields!costo.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
@@ -271,7 +271,7 @@
         <Top>1.25691cm</Top>
         <Left>3.62479cm</Left>
         <Height>1.2cm</Height>
-        <Width>9.44182cm</Width>
+        <Width>11.98437cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -313,7 +313,12 @@
       </Textbox>
     </ReportItems>
     <Height>5.92708in</Height>
-    <Style />
+    <Style>
+      <Border>
+        <Color>Blue</Color>
+        <Style>Double</Style>
+      </Border>
+    </Style>
   </Body>
   <Width>8.10417in</Width>
   <Page>
@@ -378,7 +383,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox18</rd:DefaultName>
-          <Top>1.39665cm</Top>
+          <Top>1.29082cm</Top>
           <Left>6.12479cm</Left>
           <Height>1.14335cm</Height>
           <Width>7.31542cm</Width>
@@ -396,7 +401,8 @@
       </ReportItems>
       <Style>
         <Border>
-          <Style>None</Style>
+          <Color>Blue</Color>
+          <Style>Double</Style>
         </Border>
       </Style>
     </PageHeader>
@@ -421,7 +427,7 @@
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
           <Top>0.17639cm</Top>
-          <Left>7.59037cm</Left>
+          <Left>6.79916cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <Style>
@@ -437,7 +443,8 @@
       </ReportItems>
       <Style>
         <Border>
-          <Style>None</Style>
+          <Color>Blue</Color>
+          <Style>Double</Style>
         </Border>
       </Style>
     </PageFooter>

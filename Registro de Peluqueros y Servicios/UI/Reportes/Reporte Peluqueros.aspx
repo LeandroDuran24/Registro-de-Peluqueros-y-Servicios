@@ -12,7 +12,7 @@
     <form id="form1" runat="server">
         
          <asp:ScriptManager runat="server"></asp:ScriptManager>        
-        <rsweb:ReportViewer ID="ReportViewer1" runat="server" ProcessingMode="Remote" Height="564px" Width="1060px">
+        <rsweb:ReportViewer ID="ReportViewer1" runat="server" ProcessingMode="Remote" Height="564px" Width="1060px" AsyncRendering="False">
             <ServerReport ReportServerUrl="http://AContosoDepartment/ReportServer" ReportPath="/LatestSales" />
         </rsweb:ReportViewer>
 

@@ -9,13 +9,13 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Consultas
 {
     public partial class Consulta_Servicios : System.Web.UI.Page
     {
-        List<Servicios> lista { get; set; }
+       public static List<Servicios> lista { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             Servicios servicio = new Servicios();
             /*GridView1.DataSource = BLL.ServicioBll.GetListTodo();
             GridView1.DataBind();*/
-            lista = new List<Servicios>();
+            lista = ServicioBll.GetListTodo();
         }
 
         public void Seleccionar()

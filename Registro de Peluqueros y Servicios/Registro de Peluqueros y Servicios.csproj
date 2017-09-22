@@ -110,8 +110,19 @@
     <Content Include="UI\Consultas\Consulta Servicios.aspx" />
     <Content Include="UI\Formularios\Registro Peluqueros.aspx" />
     <Content Include="UI\Formularios\Registro Servicios.aspx" />
-    <Content Include="UI\Reportes\DataSet.xsc" />
-    <Content Include="UI\Reportes\DataSet.xss" />
+    <Content Include="UI\Reportes\DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="UI\Reportes\DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="UI\Reportes\DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -178,6 +189,11 @@
     </Compile>
     <Compile Include="UI\Formularios\Registro Servicios.aspx.designer.cs">
       <DependentUpon>Registro Servicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Reportes\DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="UI\Reportes\Reporte Peluqueros.aspx.cs">
       <DependentUpon>Reporte Peluqueros.aspx</DependentUpon>

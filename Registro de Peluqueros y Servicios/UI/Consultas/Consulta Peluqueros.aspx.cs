@@ -15,7 +15,7 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Consultas
             Peluqueros peluquero = new Peluqueros();
             /* GridView1.DataSource = BLL.PeluqueroBll.GetListTodo();
              GridView1.DataBind();*/
-            lista = new List<Peluqueros>();
+            lista = PeluqueroBll.GetListTodo();
         }
 
         public void Seleccionar()
