@@ -58,7 +58,7 @@
                     &nbsp
                       
                     <asp:Button ID="ButtonBuscar" CssClass="boton-buscar" runat="server" Text="Filtrar" OnClick="ButtonBuscar_Click" /> &nbsp
-                    <a id="Reporte" href="../Reportes/Reporte Servicio.aspx" class="boton-buscar" >Imprimir</a>
+                    <a id="Reporte" href="../Reportes/Reporte Servicios.aspx" class="boton-buscar" >Imprimir</a>
                       
                 </div>
 
