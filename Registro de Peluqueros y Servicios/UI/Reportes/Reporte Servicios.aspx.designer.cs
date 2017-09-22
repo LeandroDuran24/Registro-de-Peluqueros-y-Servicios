@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tarea_4.UI.Reportes {
+namespace Registro_de_Peluqueros_y_Servicios.UI.Reportes {
     
     
-    public partial class Reporte_Servicio {
+    public partial class Reporte_Servicios {
         
         /// <summary>
         /// form1 control.

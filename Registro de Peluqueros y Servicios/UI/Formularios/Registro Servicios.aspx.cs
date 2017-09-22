@@ -11,7 +11,12 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Formularios
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ScriptResourceDefinition myScriptResDef = new ScriptResourceDefinition();
+            myScriptResDef.Path = "~/Scripts/jquery-1.4.2.min.js";
+            myScriptResDef.DebugPath = "~/Scripts/jquery-1.4.2.js";
+            myScriptResDef.CdnPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js";
+            myScriptResDef.CdnDebugPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.js";
+            ScriptManager.ScriptResourceMapping.AddDefinition("jquery", null, myScriptResDef);
         }
 
         Servicios Servicios = new Servicios();
@@ -25,7 +30,7 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Formularios
 
         public Servicios LLenar()
         {
-            Servicios.idServicio = Convert.ToInt32(idTextbox.Text);
+           // Servicios.idServicio = Convert.ToInt32(idTextbox.Text);
             Servicios.nombre = NombreTextbox.Text;
             Servicios.costo = Convert.ToInt32(CostoTextBox1.Text);
             return Servicios;

@@ -52,7 +52,7 @@
 
                     <asp:TextBox ID="idTextbox" runat="server" Width="205px" Height="33px"></asp:TextBox>&nbsp
                      <asp:Button ID="Buscar" CssClass="btn btn-primary btn-md boton-buscar" runat="server" Text="Buscar" OnClick="Buscar_Click" ValidationGroup="buscar" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ValidationGroup="buscar"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ValidationGroup="buscar" ControlToValidate="idTextbox"></asp:RequiredFieldValidator>
                 </div>
 
                 <!--input del nombre-->
@@ -63,7 +63,7 @@
                 </div>
                 <div class="text-center">
                     <asp:TextBox ID="NombreTextbox" runat="server" Width="300px" Height="33px"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" ValidationGroup="guardar"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" ValidationGroup="guardar" ControlToValidate="NombreTextbox"></asp:RequiredFieldValidator>
                 </div>
 
                 <!--input del costo-->
@@ -74,7 +74,7 @@
                 </div>
                 <div class="text-center">
                     <asp:TextBox ID="CostoTextBox1" runat="server" Width="300px" Height="33px"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" ValidationGroup="guardar"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" ValidationGroup="guardar" ControlToValidate="CostoTextBox1"></asp:RequiredFieldValidator>
                 </div>
 
 

@@ -107,8 +107,8 @@
       <DependentUpon>BarberShopDb.mdf</DependentUpon>
     </Content>
     <Content Include="UI\Consultas\Consulta Peluqueros.aspx" />
-    <Content Include="UI\Formularios\Registro Peluqueros.aspx" />
     <Content Include="UI\Consultas\Consulta Servicios.aspx" />
+    <Content Include="UI\Formularios\Registro Peluqueros.aspx" />
     <Content Include="UI\Formularios\Registro Servicios.aspx" />
     <Content Include="UI\Reportes\DataSet.xsc" />
     <Content Include="UI\Reportes\DataSet.xss" />
@@ -124,7 +124,7 @@
     <Content Include="UI\CSS\StyleSheet1.css" />
     <Content Include="UI\Formularios\MenuForm.aspx" />
     <Content Include="UI\Reportes\Reporte Peluqueros.aspx" />
-    <Content Include="UI\Reportes\Reporte Servicio.aspx" />
+    <Content Include="UI\Reportes\Reporte Servicios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -151,13 +151,6 @@
     <Compile Include="UI\Consultas\Consulta Peluqueros.aspx.designer.cs">
       <DependentUpon>Consulta Peluqueros.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Formularios\Registro Peluqueros.aspx.cs">
-      <DependentUpon>Registro Peluqueros.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UI\Formularios\Registro Peluqueros.aspx.designer.cs">
-      <DependentUpon>Registro Peluqueros.aspx</DependentUpon>
-    </Compile>
     <Compile Include="UI\Consultas\Consulta Servicios.aspx.cs">
       <DependentUpon>Consulta Servicios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -171,6 +164,13 @@
     </Compile>
     <Compile Include="UI\Formularios\MenuForm.aspx.designer.cs">
       <DependentUpon>MenuForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Formularios\Registro Peluqueros.aspx.cs">
+      <DependentUpon>Registro Peluqueros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Formularios\Registro Peluqueros.aspx.designer.cs">
+      <DependentUpon>Registro Peluqueros.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Formularios\Registro Servicios.aspx.cs">
       <DependentUpon>Registro Servicios.aspx</DependentUpon>
@@ -186,12 +186,12 @@
     <Compile Include="UI\Reportes\Reporte Peluqueros.aspx.designer.cs">
       <DependentUpon>Reporte Peluqueros.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Reportes\Reporte Servicio.aspx.cs">
-      <DependentUpon>Reporte Servicio.aspx</DependentUpon>
+    <Compile Include="UI\Reportes\Reporte Servicios.aspx.cs">
+      <DependentUpon>Reporte Servicios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Reportes\Reporte Servicio.aspx.designer.cs">
-      <DependentUpon>Reporte Servicio.aspx</DependentUpon>
+    <Compile Include="UI\Reportes\Reporte Servicios.aspx.designer.cs">
+      <DependentUpon>Reporte Servicios.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

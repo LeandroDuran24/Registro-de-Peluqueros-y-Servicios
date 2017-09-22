@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Registro_de_Peluqueros_y_Servicios.UI.Consultas
+namespace Registro_de_Peluqueros_y_Servicios.UI.Formularios
 {
-    public partial class Consulta_Peluqueros : System.Web.UI.Page
+    public partial class Registro_Peluqueros : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,7 +26,7 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Consultas
 
         public Peluqueros llenarCampos()
         {
-            peluquero.idPeluquero = Convert.ToInt32(idTextbox.Text);
+           // peluquero.idPeluquero = Convert.ToInt32(idTextbox.Text);
             peluquero.nombre = NombreTextbox.Text;
             peluquero.telefono = TelefonoTextBox.Text;
             peluquero.sexo = SexoTextBox.Text;
@@ -43,7 +43,6 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Consultas
             SexoTextBox.Text = "";
             FechaTextBox1.Text = string.Format("{0:G}", DateTime.Now);
         }
-
 
         protected void Buscar_Click(object sender, EventArgs e)
         {
@@ -78,7 +77,7 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Consultas
             }
             else
             {
-                PeluqueroBll.Guardar(peluquero);
+               PeluqueroBll.Guardar(peluquero);
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('Guardado !');</script>");
                 limpiar();
                 NombreTextbox.Focus();
@@ -88,8 +87,8 @@ namespace Registro_de_Peluqueros_y_Servicios.UI.Consultas
         protected void Eliminar_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(idTextbox.Text);
-            peluquero = PeluqueroBll.Buscar(p => p.idPeluquero == id);
-        
+            peluquero =PeluqueroBll.Buscar(p => p.idPeluquero == id);
+
             if (peluquero != null)
             {
                 PeluqueroBll.Eliminar(peluquero);

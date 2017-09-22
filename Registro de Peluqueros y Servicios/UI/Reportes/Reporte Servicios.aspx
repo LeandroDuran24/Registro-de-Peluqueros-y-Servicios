@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reporte Servicio.aspx.cs" Inherits="Tarea_4.UI.Reportes.Reporte_Servicio" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reporte Servicios.aspx.cs" Inherits="Registro_de_Peluqueros_y_Servicios.UI.Reportes.Reporte_Servicios" %>
+
 <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 
 
@@ -12,10 +13,11 @@
     <form id="form1" runat="server">
         
         <asp:ScriptManager runat="server"></asp:ScriptManager>        
-        <rsweb:ReportViewer ID="ReportViewer1" runat="server" ProcessingMode="Remote" Height="564px" Width="1060px" AsyncRendering="False">
+        <rsweb:ReportViewer ID="ReportViewer1" runat="server" ProcessingMode="Remote" Height="564px" Width="1060px">
             <ServerReport ReportServerUrl="http://AContosoDepartment/ReportServer" ReportPath="/LatestSales" />
         </rsweb:ReportViewer>
 
     </form>
 </body>
 </html>
+

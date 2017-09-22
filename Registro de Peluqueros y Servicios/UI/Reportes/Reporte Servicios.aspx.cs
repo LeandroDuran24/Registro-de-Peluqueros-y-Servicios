@@ -1,14 +1,14 @@
-﻿using System;
+﻿using Registro_de_Peluqueros_y_Servicios.UI.Consultas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Tarea_4.UI.Consultas;
 
-namespace Tarea_4.UI.Reportes
+namespace Registro_de_Peluqueros_y_Servicios.UI.Reportes
 {
-    public partial class Reporte_Servicio : System.Web.UI.Page
+    public partial class Reporte_Servicios : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,7 +18,7 @@ namespace Tarea_4.UI.Reportes
             ReportViewer1.LocalReport.DataSources.Clear();
 
             ReportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WebForms.ReportDataSource("DataSetServicio",
-                Consulta_Peluqueros.lista));
+                Consulta_Peluqueros1.lista));
 
             ReportViewer1.LocalReport.Refresh();
         }
