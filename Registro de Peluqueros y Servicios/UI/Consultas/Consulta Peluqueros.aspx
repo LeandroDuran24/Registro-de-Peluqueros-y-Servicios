@@ -101,7 +101,7 @@
         <br />
         <footer>
 
-            <p class="page-footer"><span class="glyphicon glyphicon-copyright-mark"></span>Leandro Rafael Duran Minaya[Programacion Aplicada II].amacion Aplicada II].</p>
+            <p class="page-footer"><span class="glyphicon glyphicon-copyright-mark"></span>Leandro Rafael Duran Minaya[Programacion Aplicada II].</p>
 
         </footer>
 
